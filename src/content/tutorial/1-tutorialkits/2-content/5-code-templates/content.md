@@ -8,6 +8,8 @@ editor:
     allowEdits: '/src/**'
 ---
 
+> 🖐️ Tip: You can open in StackBlitz the template with files in lesson content. 👀
+
 # Code templates
 
 A **code template** is a project that `TutorialKit` uses to display the code in the preview of a lesson. It can be anything from a simple HTML file to a full-fledged Vite application.
