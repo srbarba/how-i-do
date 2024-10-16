@@ -1,0 +1,30 @@
+---
+type: lesson
+title: Content Structure
+template: empty
+terminal: false
+previews: false
+editor: false
+focus: '/src/content/config.ts'
+autoReload: true
+---
+
+# Content Structure
+
+TutorialKit content has following structure:
+
+- Parts (src/content/tutorial/\{part}): Structural module
+  - meta.md: Part metadata
+  - Chapters (src/content/tutorial/\{part}/\{chapter}): Structural module
+    - meta.md: Charapter metadata
+    - Lessons (src/content/tutorial/\{part}/\{chapter}\{lesson}): Lesson content
+      - content.md: Lesson content file
+      - \_files: Files required for the lesson
+      - \_solution: Files required to provide a solution to the lesson
+- Templates (src/templates)
+  - Template (src/templates/\{template}): Lesson reusable code
+
+It is recommended to prefix the folders with a number to keep the order of the parts, chapters and lessons.
+
+<br />
+<img src="/img/tutorialkit-content-structure.png" />

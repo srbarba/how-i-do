@@ -1,0 +1,10 @@
+---
+const {  } = Astro.props
+---
+
+<div class="slide">
+  <center><h1><slot name="title" /></h1></center>
+  <div style="max-width: 70%; margin: auto;" class="min-h-100 grid place-items-center">
+    <slot />
+  </div>
+</div>

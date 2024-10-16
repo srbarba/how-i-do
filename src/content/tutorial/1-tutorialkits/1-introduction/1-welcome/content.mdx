@@ -1,0 +1,44 @@
+---
+type: lesson
+title: Welcome to TutorialKit
+editor: false
+terminal: false
+previews: false
+template: empty
+---
+
+import { ReactTyped } from 'react-typed'
+import Slide from '@/components/Slide.astro'
+
+<Slide>
+  <Fragment slot="title">Welcome to TutorialKit 👋</Fragment>
+  <Fragment>
+    <center>
+      Create interactive <b><ReactTyped
+      client:load
+      strings={[
+      'tutorials',
+      'presentations',
+      'documentation',
+      'code reviews',
+      ]}
+      typeSpeed={60}
+      backSpeed={60}
+      backDelay={1000}
+      loop
+      /></b>with the power of Stackblitz's WebContainers.
+
+      [Check the documentation](https://tutorialkit.dev/) to learn more about TutorialKit and how it works.
+
+      </center>
+
+      <br/ >
+
+      <div style="max-width: 80%; margin: auto;">
+
+      <img src="/img/tutorialkit-themes.png" />
+
+      </div>
+
+  </Fragment>
+</Slide>
