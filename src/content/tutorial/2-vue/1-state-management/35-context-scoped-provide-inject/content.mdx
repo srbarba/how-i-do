@@ -1,0 +1,33 @@
+---
+type: lesson
+title: Context scoped state management
+template: vite-vue-template
+focus: '/src/components/Orders.vue'
+slug: context-scoped-provide-inject
+---
+
+import StateManagementLinks from '../_state-management-links.md'
+
+## Context scoped state management with provide/inject
+
+In this lesson, we will learn how to manage context-scoped state in Vue with provide/inject.
+
+### Introduction
+
+The provide/inject API allows us to provide a value to all descendants of a component.
+
+### When to use provide/inject for context-scoped state
+
+This approach is useful when the prop drilling is overkill due to the number of components that need to share the state.
+
+This apporach follows the [Mediator pattern](https://refactoring.guru/design-patterns/mediator) offering a way to communicate between components without having to pass props down the component tree.
+
+### Creating context-scoped state with provide/inject
+
+Check the file `Orders.vue` to see an example of provide/inject state management.
+
+---
+
+State management links:
+
+<StateManagementLinks />

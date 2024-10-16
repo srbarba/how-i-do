@@ -1,0 +1,50 @@
+---
+type: lesson
+title: Context scoped state management
+template: vite-vue-template
+focus: '/src/components/Orders.vue'
+slug: context-scoped
+---
+
+import StateManagementLinks from '../_state-management-links.md'
+
+## Context scoped state management
+
+In this lesson, we will learn how to manage context-scoped state in Vue.
+
+### Introduction
+
+With context-scoped we mean any state that is shared in our application but is not global.
+
+For example:
+
+- State shared between components by prop drilling
+- State shared between components by provide/inject
+
+Similarly to self-contained state, context-scoped state is linked to a component lifecycle.
+
+### When to use context-scoped state
+
+This approach is useful when the state is shared between components but you don't need it to be global.
+
+The advantage of this approach compared to global state is that the state is linked to a component lifecycle.
+
+Once the component is destroyed, the state is also destroyed.
+
+### Creating context-scoped state
+
+#### Prop drilling
+
+Check the file `Orders.vue` to see an example of context-scoped state management with prop drilling.
+
+In `Orders.vue`, we have a `searchTerm` ref that is shared between the `OrdersFilters` and `OrderList` components.
+
+#### Provide/Inject
+
+Check next lesson to see an example of context-scoped state management with provide/inject.
+
+---
+
+State management links:
+
+<StateManagementLinks />

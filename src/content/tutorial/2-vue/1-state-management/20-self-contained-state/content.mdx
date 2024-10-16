@@ -1,0 +1,39 @@
+---
+type: lesson
+title: Self contained state management
+template: vite-vue-template
+focus: '/src/components/Orders.vue'
+slug: self-contained-state
+---
+
+import StateManagementLinks from '../_state-management-links.md'
+
+## Self contained state management
+
+In this lesson, we will learn how to manage self-contained state in Vue.
+
+### Introduction
+
+Self-contained state management is when the state is managed within a single component. This is the simplest form of state management in Vue.
+
+This kind of state management is documented in [state-management vue docs](https://vuejs.org/guide/scaling-up/state-management#what-is-state-management).
+
+### When to use self-contained state
+
+This approach is useful when the state is linked to the component lyfecycle and doesn't need to be shared with other components.
+
+Once the component is destroyed, the state is also destroyed.
+
+### Creating self-contained state
+
+You are using this approach when you define a reactive variable in a component and you don't expose it to the parent with props.
+
+It means that the state is only available within the component and its children.
+
+Check the file `Orders.vue` to see an example of self-contained state management.
+
+---
+
+State management links:
+
+<StateManagementLinks />

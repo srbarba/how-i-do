@@ -1,0 +1,4 @@
+- [Self contained state management](/vue/state-management/self-contained-state)
+- [Context scoped state management](/vue/state-management/context-scoped)
+  - [Context scoped state management with provide/inject](/vue/state-management/context-scoped-provide-inject)
+- [Global state management with](/vue/state-management/global)
