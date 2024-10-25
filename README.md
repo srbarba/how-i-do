@@ -1,6 +1,6 @@
-# How I Do
+# Tutorialkit POC
 
-This project aims to be a place where I document, in an interactive way, the solutions I propose and share with other developers and my future self (👋 hello future me!).
+This project is a Tutorialkit POC.
 
 ## Project Structure
 
